@@ -13,7 +13,7 @@ body {
  background-color: #FF33FF;
  #producto {
   width: 200px; 
-  height: 500px; 
+  height: 400px; 
   background-color: #AAAAAA;
   border: 2px solid;
   margin: 20px;
@@ -131,4 +131,5 @@ clear: both;
 #descripcion{
   font-size: 15px;
 }
+
 
