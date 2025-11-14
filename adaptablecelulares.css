@@ -34,8 +34,8 @@ body {
   font: bold  18px verdana;
   }
 #rosa_roja{
-   width: 70%;
-   height: 35%;
+   width: 50%;
+   height: 55%;
    background-color: #0d0585;
    scale: 1.2;  
    box-shadow: 0px 15px 20px 0px #000000;
@@ -142,4 +142,5 @@ clear: both;
 #descripcion{
   font-size: 15px;
 }
+
 
