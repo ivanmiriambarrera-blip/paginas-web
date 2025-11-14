@@ -5,7 +5,15 @@ body {
 } 
 @media (max-width: 1024px) { 
 body { 
- background-color: #3333FF; 
+ background-color: #3333FF;
+   align-content:space-between;
+ #rosa_roja{
+   margin: 10px;
+   height: 50%;
+   background-color: #0d0585;
+   object-fit: fill;
+  
+}  
 } 
 } 
 @media (max-width: 768px) { 
@@ -13,21 +21,22 @@ body {
  background-color: #FF33FF;
  #producto {
   width: 200px; 
-  height: 400px; 
+  height: 450px; 
   background-color: #AAAAAA;
   border: 2px solid;
-  margin: 20px;
+  margin: 8%;
   display: flex;
   flex-direction: column;
-  align-content:space-around;
+  align-content:space-between;
   text-align: center;
   border-radius: 10px; 
   box-shadow: 0px 10px 20px 0px #000000;
-  font: bold 18px verdana;
+  font: bold  18px verdana;
   }
-#rosa_roja {
-   margin: 10px;
-   WIDTH="50" HEIGHT="50"
+#rosa_roja{
+   width: 90%;
+   background-color: #0d0585;
+   scale: 1;  
 } 
 }
 
@@ -131,5 +140,6 @@ clear: both;
 #descripcion{
   font-size: 15px;
 }
+
 
 
