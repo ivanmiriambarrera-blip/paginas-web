@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background: #671d1b;
+    flex-direction: column;
+    width: 40vw;
+    display: none;
+
+  }
+
+  .nav-links.show {
+    display: flex;
+    box-shadow: 0 0 0 100vmax rgb(0 0 0 / 50%);
+    bottom: 100;
+  }
+
+  .nav-links li {
+    width: 100%;
+      }
+  /* Submenu normal en desktop */
+.submenu:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  position: static; /* ya no absoluto */
+  background: #333;
+  flex-direction: column;
+  width: 100%;
+  display: none;
+  text-align: left;
+  padding-left: -100px; /* se expande hacia la izquierda */
+}
+
+.dropdown.show {
+  display: flex;
+}
+
+.dropdown li a {
+  padding: 10px;
+  color: #fff;
+}

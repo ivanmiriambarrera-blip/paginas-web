@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> NICO videojuegos</title>
+  <link rel="icon" href="logos/logo_Nico.jpg"> <type="image.jpg" sizes="16x16"></type>
+  <meta name="description" content="pagina web de la empresa nico con fotos y videos ">
+	<meta name="keywords" content="HTML,CSS,MOUSE,TIENDA,JOYSTICK,JUEGO,MEMORIA,VENTA,CASTELAR,JAVASCRIPT">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media768.css"  media="(max-width: 768px)">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="index.html"> <img src="logos\logo_nico_cont_circulo.png" alt="logo"></a>
+    <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html"><i class="bi bi-house-fill"></i>  INICIO</a></li>
+    <li class="submenu">
+      <a href="pagina_nico_categorias.html" ><i class="bi bi-list-ul"></i>  CATEGORIAS</a>
+
+      <ul class="dropdown">
+         <li><a href="informatica.html"><i class="bi bi-pc-display-horizontal"></i>  INFORMATICA</a></li>
+        <li><a href="consolas.html"><i class="bi bi-controller"></i>  CONSOLAS</a></li>
+        <li><a href="accesorios.html"><i class="bi bi-sd-card-fill"></i>  ACCESORIOS</a></li>
+        <li><a href="servicios.html"><i class="bi bi-tools"></i>  SERVICIOS</a></li>
+      </ul>
+    </li>
+    <li><a href="preguntas.html"><i class="bi bi-question-circle"></i>  PREGUNTAS FRECUENTES</a></li>
+    <li><a href="contacto.html"><i class="bi bi-telephone-plus-fill"></i>  CONTACTO</a></li>
+  </ul>
+</nav>
+</header>
+<main>
+<section>
+  <div class="carousel">
+<div class="carousel-track">
+  <img src="fondos/god_war_fondo_grande.webp" alt="Imagen 1">
+  <img src="fondos/black.jpg" alt="Imagen 2">
+  <img src="fondos/bully.jpg" alt="Imagen 3">
+  <img src="fondos/crash.jpg" alt="Imagen 4">
+  <img src="fondos/GTA_san_andreas.jpg" alt="Imagen 5">
+  <img src="fondos/silent_hill_4.jpg" alt="Imagen 6">
+  <img src="fondos/medalla_de_honor.jpg" alt="Imagen 7">
+  <img src="fondos/mk_armageddon.jpg" alt="Imagen 8">
+  <img src="fondos/mk_shaolin.jpg" alt="Imagen 9">
+</div>
+
+<button class="carousel-btn prev">❮</button>
+<button class="carousel-btn next">❯</button>
+</div>
+
+
+</section>
+<section class="productos_principal">
+
+  <P class="seccion_nombre"> ACCESORIOS </p>
+<section class="informatica">
+	<DIV class="PRODUCTOS_CONJUNTO">
+		<DIV class="tarjeta" id="tarjeta_1">
+					<DIV class="imagen_producto" id="joystick_ps2_negro">
+				<IMG SRC="fotos_productos\memoria_kingston_64gb_clase10.jpg" TYPE="IMAGE.PNG" WIDTH="300" HEIGHT="290">
+			</DIV>
+      	<P class="producto"> MEMORIA 64GB KINGSTON</P>
+			<P class="precio"> 10.000$ </p>
+			<P class="disponibilidad"> MEMORIA CLASE 10 </P>
+      <a href="contacto.html" class="btn-consultar">CONSULTAR</a>
+			</DIV>
+      <DIV class="tarjeta" id="tarjeta_2">
+  					<DIV class="imagen_producto" id="joystick_ps2_negro">
+  				<IMG SRC="fotos_productos\memoria_kingston_64gb_clase10.jpg" TYPE="IMAGE.PNG" WIDTH="300" HEIGHT="290">
+  			</DIV>
+        	<P class="producto"> MEMORIA 64GB KINGSTON</P>
+  			<P class="precio"> 10.000$ </p>
+  			<P class="disponibilidad"> MEMORIA CLASE 10 </P>
+      <a href="contacto.html" class="btn-consultar">CONSULTAR</a>
+  			</DIV>
+        <DIV class="tarjeta" id="tarjeta_3">
+              <DIV class="imagen_producto" id="joystick_ps2_negro">
+            <IMG SRC="fotos_productos\memoria_kingston_64gb_clase10.jpg" TYPE="IMAGE.PNG" WIDTH="300" HEIGHT="290">
+          </DIV>
+            <P class="producto"> MEMORIA 64GB KINGSTON</P>
+          <P class="precio"> 10.000$ </p>
+          <P class="disponibilidad"> MEMORIA CLASE 10 </P>
+      <a href="contacto.html" class="btn-consultar">CONSULTAR</a>
+          </DIV>
+</section>
+</section>
+
+</MAIN>
+  <script src="script.js"></script>
+  <script>const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+
+let index = 0;
+
+function updateCarousel() {
+  const width = slides[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${index * width}px)`;
+}
+
+nextBtn.addEventListener('click', () => {
+  index = (index + 1) % slides.length;
+  updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+  index = (index - 1 + slides.length) % slides.length;
+  updateCarousel();
+});
+
+window.addEventListener('resize', updateCarousel);
+</script>
+
+</body>
+<footer>
+	<div class="footer-bottom">
+        <div class="footer-container">
+            <p class="footer-copyright">Copyright © 2025 <a target="_blank" href="https://www.instagram.com/nico.videojuegos/" id="footer-copyright">Nico Videojuegos</a> - Todos los derechos reservados.</p><!-- End .footer-copyright -->
+        </div>
+  </div>
+</footer>
+</html>

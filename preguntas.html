@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> NICO videojuegos</title>
+  <link rel="icon" href="logos/logo_Nico.jpg"> <type="image.jpg" sizes="16x16"></type>
+  <meta name="description" content="pagina web de la empresa nico con fotos y videos ">
+	<meta name="keywords" content="HTML,CSS,MOUSE,TIENDA,JOYSTICK,JUEGO,MEMORIA,VENTA,CASTELAR,JAVASCRIPT">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media768.css"  media="(max-width: 768px)">
+</head>
+<body>
+  <header>
+
+    <nav class="navbar">
+      <a class="logo" href="index.html"> <img src="logos\logo_nico_cont_circulo.png" alt="logo"></a>
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="bi bi-house-fill"></i>  INICIO</a></li>
+      <li class="submenu">
+        <a href="pagina_nico_categorias.html" ><i class="bi bi-list-ul"></i>  CATEGORIAS</a>
+
+        <ul class="dropdown">
+           <li><a href="informatica.html"><i class="bi bi-pc-display-horizontal"></i>  INFORMATICA</a></li>
+          <li><a href="consolas.html"><i class="bi bi-controller"></i>  CONSOLAS</a></li>
+          <li><a href="accesorios.html"><i class="bi bi-sd-card-fill"></i>  ACCESORIOS</a></li>
+          <li><a href="servicios.html"><i class="bi bi-tools"></i>  SERVICIOS</a></li>
+        </ul>
+      </li>
+      <li><a href="preguntas.html"><i class="bi bi-question-circle"></i>  PREGUNTAS FRECUENTES</a></li>
+      <li><a href="contacto.html"><i class="bi bi-telephone-plus-fill"></i>  CONTACTO</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <div class="seccion_nombre"> <p>Preguntas Frecuentes</p></div>
+    <div class="backpregunta"></div>
+    <div class="faq">
+  <div class="faq-item">
+    <button class="faq-question" ><i class="bi bi-alarm"></i> ¿Cuál es el horario de atención?</button>
+    <div class="faq-answer">
+      <p>Atendemos de lunes a viernes de 9 a 21 hs.</p>
+    </div>
+    </div>
+
+  <div class="faq-item">
+    <button class="faq-question"><i class="bi bi-shop"></i> ¿Dónde se puede retirar?</button>
+    <div class="faq-answer">
+      <p>Estamos ubicados en la zona de Castelar, Morón Sur. Provincia de Buenos Aires.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question"><i class="bi bi-coin"></i> ¿Qué métodos de pago aceptan?</button>
+    <div class="faq-answer">
+      <p>Aceptamos efectivo y transferencias bancarias.</p>
+    </div>
+  </div>
+</div>
+
+</section>
+<section class="whatsapp"
+<span id="whatsapp"> <a href="https://wa.me/5491159714487/?text=Gracias%20por%20comunicarte "target="blank"><img src="logos/whatsapp_logo_3d_icon.png" width="100" height="100"></a></span>
+</section>
+</body>
+<main>
+
+<script>
+  //animacion de PREGUNTAS
+  const questions = document.querySelectorAll('.faq-question');
+
+  questions.forEach(q => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      answer.classList.toggle('show');
+    });
+  });
+</script>
+  <script src="script.js"></script>
+<footer>
+<div class="footer-bottom">
+      <div class="footer-container">
+          <p class="footer-copyright">Copyright © 2025 <a target="_blank" href="https://www.instagram.com/nico.videojuegos/" id="footer-copyright">Nico Videojuegos</a> - Todos los derechos reservados.</p><!-- End .footer-copyright -->
+      </div>
+</div>
+</footer>
+</html>
