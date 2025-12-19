@@ -18,7 +18,7 @@ header{
   justify-content: space-between;
   align-items: center;
   background: #f6a700;
-  padding: 10px 20px;
+  padding: 10px 50px;
   color: #fff;
   height: 7em;
   position: fixed; /* Fija el elemento en la ventana del navegador */
@@ -578,4 +578,5 @@ margin-left: auto;
   opacity: 1;
   transform: translateY(0);
 }
+
 
